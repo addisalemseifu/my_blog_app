@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# Add rubocop
+gem 'rubocop', '>= 1.0', '< 2.0'
