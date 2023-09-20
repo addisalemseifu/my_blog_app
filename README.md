@@ -45,6 +45,8 @@
 ### Key Features <a name="key-features"></a>
 
 - Added tables
+- Add models
+- Populate seed
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,6 +109,7 @@ it will install the required gemfile for running the project
 
 
 - **creat data model**
+- **creat data processing**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +119,7 @@ it will install the required gemfile for running the project
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/manzitresor/Catalog-of-my-things/issues).
+Feel free to check the [issues page](https://github.com/addisalemseifu/my_blog_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
