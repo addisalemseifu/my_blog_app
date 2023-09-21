@@ -47,6 +47,8 @@
 - Added tables
 - Add models
 - Populate seed
+- Add validations for the models.
+- Add Unit tests for all the models.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +112,7 @@ it will install the required gemfile for running the project
 
 - **creat data model**
 - **creat data processing**
+- **validate data-types inserted by the user**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
