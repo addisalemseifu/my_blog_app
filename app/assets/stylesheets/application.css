@@ -13,3 +13,238 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;800;1000&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto+Slab:wght@300;400;500&display=swap');
+
+/*
+===============
+Variables
+===============
+*/
+
+:root {
+  --clr-primary: #645cff;
+  --clr-primary-dark: #282566;
+  --clr-primary-light: #a29dff;
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-black: #121212;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.25rem;
+  --large-screen-width: 1170px;
+  --small-screen-width: 90vw;
+  --fixed-width: 50rem;
+  --pale-gray: #f5f6fa;
+  --clr-blue: #0290ff;
+  --font-rob: roboto slab;
+  --font-mont: montserrat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: var(--font-mont);
+}
+
+a,
+li {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* more global css */
+
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  color: var(--clr-primary);
+  background: var(--clr-primary-light);
+}
+
+/*
+===============
+Users List Page
+===============
+*/
+.user-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.user-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.user-wrapper img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 3rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.user-details h2 {
+  align-self: center;
+}
+
+.user-details h5 {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/*
+===============
+User Detail Page
+===============
+*/
+
+.bio-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+/*
+===============
+All Posts For a Particular User Page
+===============
+*/
+
+.user-container button {
+  align-self: center;
+  border: 1px solid #719aba;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.post-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.post-wrapper h5 {
+  align-self: end;
+}
+
+.comment-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
