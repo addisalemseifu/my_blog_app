@@ -52,6 +52,9 @@
 - Add Controllers for the models.
 - Add path's for all the controllers.
 - Add tests for all the controllers.
+- Add logic in my controllers.
+- Add Html templates.
+- Add styling.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +115,7 @@ it will install the required gemfile for running the project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **add views**
+- **add forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
