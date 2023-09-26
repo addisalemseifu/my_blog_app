@@ -7,7 +7,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates dicta similique ab soluta totam inventore ratione, perferendis facilis facere maiores. Modi impedit aperiam dolores tempora eligendi odit et repellendus laboriosam nihil, deleniti aut facere vel doloribus possimus rem quia aliquam nesciunt? Dolorum veritatis molestiae vero quod molestias exercitationem aut.</p>
             </div>
             <div class="comment-wrapper">
-                <% @post.recent_comments.each_with_index do |comment,index| %>
+                <% @comments.each_with_index do |comment,index| %>
                     <h4><%= comment.author.name %> : <%= "#{comment.text}: # #{index+1}" %></h4>
                 <% end %>
             </div>
