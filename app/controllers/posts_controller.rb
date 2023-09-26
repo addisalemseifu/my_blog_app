@@ -3,9 +3,9 @@ class PostsController < ApplicationController
     @user_id = params[:user_id]
     @user = User.find(@user_id)
     @posts = Post.where(author_id: @user_id)
-   end
+  end
 
   def show
     @post = Post.find(params[:id])
-   end
+  end
 end

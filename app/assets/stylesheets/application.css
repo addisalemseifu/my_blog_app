@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;800;1000&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto+Slab:wght@300;400;500&display=swap');
 
 /*
@@ -156,79 +156,57 @@ Users List Page
 ===============
 */
 .user-container {
-  display:  flex;
+  display: flex;
   flex-direction: column;
   margin: 2rem;
 }
 
 .user-wrapper {
   border: 1px solid #b3d8f4;
-    display:  flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    
-  }
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
 
-  .user-wrapper img {
-    width: 8rem;
-    height: 8rem;
-    margin-right: 3rem;
-  }
+.user-wrapper img {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 3rem;
+}
 
-  .user-details {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-right: 2rem;
-  }
+.user-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 2rem;
+}
 
-  .user-details h2 {
-    align-self: center;
-  }
+.user-details h2 {
+  align-self: center;
+}
 
+.user-details h5 {
+  align-self: flex-end;
+  margin-left: auto;
+}
 
-  .user-details h5 {
-    align-self: flex-end;
-    margin-left: auto;
-  }
-
-  /*
+/*
 ===============
 User Detail Page
 ===============
 */
 
-  .bio-wrapper {
-    border: 1px solid #b3d8f4;
-    display:  flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    padding: 1rem;
-  }
+.bio-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
 
-  .post-container {
-    display:  flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-  }
-
-  .post-wrapper {
-    border: 1px solid #b3d8f4;
-    display:  flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    padding: 1rem;
-  }
-
-  .post-wrapper h5 {
-    align-self: end;
-  }
-
-    /*
+/*
 ===============
 All Posts For a Particular User Page
 ===============
@@ -242,31 +220,31 @@ All Posts For a Particular User Page
   border-radius: 2px;
 }
 
-  .post-container {
-    display:  flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-  }
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
 
-  .post-wrapper {
-    border: 1px solid #b3d8f4;
-    display:  flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    padding: 1rem;
-  }
+.post-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
 
-  .post-wrapper h5 {
-    align-self: end;
-  }
+.post-wrapper h5 {
+  align-self: end;
+}
 
-  .comment-wrapper {
-    border: 1px solid #b3d8f4;
-    display:  flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    border-radius: 4px;
-    padding: 1rem;
-  }
+.comment-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
