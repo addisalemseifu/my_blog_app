@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
   before_action :set_post, only: %i[new create update]
   def index; end
 
-
   def show; end
 
   def new
@@ -21,7 +20,6 @@ class CommentsController < ApplicationController
       render :new, status: 400
     end
   end
-
 
   private
 
