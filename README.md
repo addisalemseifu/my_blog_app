@@ -55,6 +55,8 @@
 - Add logic in my controllers.
 - Add Html templates.
 - Add styling.
+- Add forms for comment.
+- Add forms for post.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +117,7 @@ it will install the required gemfile for running the project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **add forms**
+- **add API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
