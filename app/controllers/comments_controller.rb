@@ -1,16 +1,15 @@
 class CommentsController < ApplicationController
   before_action :set_post, only: %i[new create update]
-  def index
+  def index; end
 
-   end
 
   def show; end
 
   def new
     @comment = Comment.new
-   end
+  end
 
-   def create
+  def create
     @comment = Comment.new(comment_params)
     @comment.author = current_user
     @comment.post = @post
@@ -23,7 +22,7 @@ class CommentsController < ApplicationController
     end
   end
 
-  
+
   private
 
   def set_post
