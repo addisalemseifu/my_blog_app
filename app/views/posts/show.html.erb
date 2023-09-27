@@ -5,6 +5,7 @@
                     <p><%= @post.text %></p>
                     <h5>Comments: <%= @post.comments_counter %> , Likes: <%= @post.likes_counter %></h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptates dicta similique ab soluta totam inventore ratione, perferendis facilis facere maiores. Modi impedit aperiam dolores tempora eligendi odit et repellendus laboriosam nihil, deleniti aut facere vel doloribus possimus rem quia aliquam nesciunt? Dolorum veritatis molestiae vero quod molestias exercitationem aut.</p>
+                    <%= button_to 'Like', user_posts_path(@post), method: :post %>
             </div>
             <div class="comment-wrapper">
                 <% @comments.each_with_index do |comment,index| %>
