@@ -1,1 +1,7 @@
-<h1>Add a new post</h1>
+<h1>Create posts</h1>
+<%= form_with model: @post, url: user_posts_path, local: true do |form| %>
+  <%= form.text_field :title, class: "form_title", placeholder: "Enter your title here" %><br>
+  <%= form.text_area :text, class: "form_text", placeholder: "Enter your text here" %><br>
+  
+  <%= form.submit  class: "submit_btn" %>
+<% end %>

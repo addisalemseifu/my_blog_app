@@ -248,3 +248,11 @@ All Posts For a Particular User Page
   border-radius: 4px;
   padding: 1rem;
 }
+
+.btn-wrapper {
+  border: 1px solid #b3d8f4;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  padding: 1rem;
+}
