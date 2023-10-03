@@ -15,7 +15,6 @@ RSpec.describe 'Users', type: :request do
       get '/users/'
       expect(response).to render_template('users/index')
     end
-
   end
 
   context 'GET /show' do
