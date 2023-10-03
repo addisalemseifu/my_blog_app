@@ -1,16 +1,16 @@
 class PostsController < ApplicationController
   before_action :find_user, only: %i[index show new edit create]
   def index
+    @posts = Post.includes(:author).references(:author).where('author_id= ?', params[:user_id])
+    @comment = @user.posts.includes(:comments)
     @user_id = params[:user_id]
     @user = User.find(@user_id)
-    @posts = Post.where(author_id: @user_id)
+    @posts = @user.recent_posts
   end
 
   def show
     @user_id = params[:user_id]
-    @user = User.find(@user_id)
-    @post = @user.posts.find(params[:id])
-    @comments = @post.comments
+    @post = Post.find(params[:id])
   end
 
   def new
