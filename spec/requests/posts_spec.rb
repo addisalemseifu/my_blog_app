@@ -20,7 +20,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'includes the correct placeholder text' do
       get "/users/#{@user.id}/posts/"
-      expect(response.body).to include('Here is a list of posts for a given user')
+      expect(response.body).to include('Pagination')
     end
   end
 
@@ -37,7 +37,7 @@ RSpec.describe 'Posts', type: :request do
 
     it 'includes the correct placeholder text' do
       get "/users/#{@user.id}/posts/#{@post.id}/"
-      expect(response.body).to include('Here is the detail for a given post')
+      expect(response.body).to include('Post #')
     end
   end
 end
