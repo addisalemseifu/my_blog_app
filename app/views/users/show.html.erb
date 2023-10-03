@@ -13,7 +13,7 @@
     <div class= 'post-container'>
         <% @post.each_with_index do |post,index| %>
             <div class="post-wrapper">
-                    <h2>Post #<%= index+1 %></h2>
+                    <h2><%= link_to "Post # #{index+1}", "/users/#{@user.id}/posts/#{post.id}" %></h2>
                     <p><%= post.text %></p>
                     <h5>Comments: <%= post.comments_counter %> , Likes: <%= post.likes_counter %></h5>
             </div>

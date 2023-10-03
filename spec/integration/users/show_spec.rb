@@ -37,17 +37,7 @@ RSpec.describe 'User Show Page', type: :system do
       expect(page).to have_content(@user.bio)
     end
 
-    # it 'shows all the posts of the user' do
-    #     click_link('See all posts')
-    #     visit "/users/#{@user.id}/posts/"
-    #   @user.posts.each do |post|
-    #     expect(page).to have_content(post.title)
-    #     expect(page).to have_content(post.text)
-    #   end
-    # end
-
     it 'has a button to view all user posts' do
-      #   expect(page).to have_content(@user.name)
       click_link('See all posts')
       visit "/users/#{@user.id}/posts/"
       expect(page).to have_current_path("/users/#{@user.id}/posts/")
@@ -56,6 +46,18 @@ RSpec.describe 'User Show Page', type: :system do
     it 'redirects to open all posts of a user' do
       click_link('See all posts')
       expect(page).to have_current_path("/users/#{@user.id}/posts/")
+    end
+
+    it 'redirects to the posts show page' do
+      click_link('Post # 1')
+      expect(page).to have_current_path("/users/#{@user.id}/posts/#{@user.recent_posts[0].id}")
+    end
+
+    it 'shows the first 3 posts of the user' do
+      @user.recent_posts.each_with_index do |post, index|
+        expect(page).to have_content("Post # #{index + 1}")
+        expect(page).to have_content(post.text)
+      end
     end
   end
 end

@@ -107,16 +107,14 @@ it will install the required gemfile for running the project
 
   👤 **addisalem**
 
-- GitHub: [@addisalemseifu](https://github.com/githubhandle)
-- Twitter: [@Addisalem Seifu](https://twitter.com/addisalems92518)
+- GitHub: [@addisalemseifu](https://github.com/addisalemseifu)
+- Twitter: [@Addisalem Seifu](https://twitter.com/beidework)
 - LinkedIn: [addisalem seifu](https://www.linkedin.com/in/addisalemseifu/)
 
 👤 **Zohra Neda**
 
 - GitHub: [@zohra-neda](https://github.com/zohra-neda)
-- Twitter: [@zohra_neda](https://twitter.com/zohra_neda)
 - LinkedIn: [zohra-neda](https://www.linkedin.com/in/zohra-neda)
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

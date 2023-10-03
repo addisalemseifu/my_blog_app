@@ -35,5 +35,10 @@ RSpec.describe 'Posts Show', type: :system do
     it 'displays the user name of each commentor' do
       expect(page).to have_content('Addisalem Seifu')
     end
+    it 'shows all the comments that each commenter left' do
+      @user.recent_posts[0].recent_comments.each_with_index do |comment, index|
+        expect(page).to have_content("#{@user.name} : #{comment[0].text}: # #{index + 1}")
+      end
+    end
   end
 end

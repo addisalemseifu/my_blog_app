@@ -4,12 +4,10 @@ RSpec.describe 'Post Index', type: :system do
     @user = User.create(name: 'Addisalem Seifu',
                         photo: 'https://media.istockphoto.com/id/1406197730/photo/portrait-of-a-young-handsome-indian-man.webp?b=1&s=170667a&w=0&k=20&c=KtmKHyOE6MJV0w2DiGX8P4399KHNbZ3p8lCjTEabGcY=',
                         bio: 'Full-Stack Software developer', posts_counter: 0)
-    @post1 = @user.posts.create(title: 'Post 1', text: 'This is the first post.', comments_counter: 0,
-                                likes_counter: 0)
+    @post1 = @user.posts.create(title: 'Post 1', text: 'This is the first post.', comments_counter: 0, likes_counter: 0)
     @post2 = @user.posts.create(title: 'Post 2', text: 'This is the second post.', comments_counter: 0,
                                 likes_counter: 0)
-    @post3 = @user.posts.create(title: 'Post 3', text: 'This is the third post.', comments_counter: 0,
-                                likes_counter: 0)
+    @post3 = @user.posts.create(title: 'Post 3', text: 'This is the third post.', comments_counter: 0, likes_counter: 0)
     Comment.create(post: @post1, author: @user, text: 'This is a comment')
     Like.create(post: @post1, author: @user)
   end
@@ -38,12 +36,17 @@ RSpec.describe 'Post Index', type: :system do
     it 'shows how many likes a post has.' do
       expect(page).to have_content('Likes: 1')
     end
-    it 'shows a section for pagination if there are more posts than fit on the view' do
+    it 'shows a section for pagination there are more posts than fit on the view' do
       expect(page).to have_content('Pagination')
     end
-    # it 'when user clicks on a post, it redirects to that posts show page' do
-    #   click_link('Post # 1')
-    #   expect(page).to have_current_path user_posts_path(@post1.author_id, @post)
-    # end
+    it 'shows the first comment of the user' do
+      @user.recent_posts[0].recent_comments.each_with_index do |comment, index|
+        expect(page).to have_content("#{@user.name} : #{comment[0].text}: # #{index + 1}")
+      end
+    end
+    it 'redirects to the posts show page' do
+      click_link('Post # 1')
+      expect(page).to have_current_path("/users/#{@user.id}/posts/#{@user.recent_posts[0].id}")
+    end
   end
 end

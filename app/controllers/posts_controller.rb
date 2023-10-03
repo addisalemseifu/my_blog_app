@@ -3,6 +3,9 @@ class PostsController < ApplicationController
   def index
     @posts = Post.includes(:author).references(:author).where('author_id= ?', params[:user_id])
     @comment = @user.posts.includes(:comments)
+    @user_id = params[:user_id]
+    @user = User.find(@user_id)
+    @posts = @user.recent_posts
   end
 
   def show
