@@ -12,7 +12,7 @@
                     
             </div>
             <div class="comment-wrapper">
-                <% @comments.each_with_index do |comment,index| %>
+                <% @post.comments.each_with_index do |comment,index| %>
                     <h4><%= comment.author.name %> : <%= "#{comment.text}: # #{index+1}" %></h4>
                 <% end %>
             </div>
