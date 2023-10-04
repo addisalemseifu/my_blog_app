@@ -264,21 +264,14 @@ Sign-Up Page
 ===============
 */
 
-.form-container {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
 .sign-up {
   position: relative;
   right: 2rem;
   margin-bottom: 2rem;
- }
+}
 
 
- /*
+/*
 ===============
 Sign-In Page
 ===============
@@ -289,9 +282,8 @@ Sign-In Page
   flex-direction: column;
   justify-content: center;
   align-items: center;
- }
- 
- .sign-in {
-   margin-bottom: 2rem;
-  }
+}
 
+.sign-in {
+  margin-bottom: 2rem;
+}
