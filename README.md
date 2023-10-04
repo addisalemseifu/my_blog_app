@@ -38,6 +38,7 @@
 <details>
   <summary>Client</summary>
     <li><a href="https://rubyonrails.org/">Rails</a></li>
+    <li><a href="https://github.com/heartcombo/devise#getting-started">Devise</a></li>
 </details>
 
 <!-- Features -->
@@ -59,7 +60,7 @@
 - Add forms for post.
 - Add Integration tests.
 - Implements eager-loading.
-  
+- Add devices
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -123,7 +124,7 @@ it will install the required gemfile for running the project
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **add API**
+- **add authorization rules**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
